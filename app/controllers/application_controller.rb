@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-<<<<<<< Updated upstream
+
 end
 =======
   before_action :basic_auth
@@ -12,4 +12,4 @@ end
     end
   end
 end
->>>>>>> Stashed changes
+
