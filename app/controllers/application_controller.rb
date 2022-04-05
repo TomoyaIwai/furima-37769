@@ -1,7 +1,5 @@
 class ApplicationController < ActionController::Base
 
-end
-=======
   before_action :basic_auth
 
   private
@@ -12,4 +10,3 @@ end
     end
   end
 end
-
