@@ -22,6 +22,6 @@ before_action :authenticate_user!, only: :new
   private
 
   def item_params
-    params.require(:item).permit(:title, :price, :info, :category_id, :status_id, :shipping_fee_id, :region_id, :schedule_id).merge(user_id: current_user.id )
+    params.require(:item).permit(:title, :price, :info, :category_id, :status_id, :shipping_fee_id, :region_id, :schedule_id, :image).merge(user_id: current_user.id )
   end
 end
