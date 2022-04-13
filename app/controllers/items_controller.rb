@@ -24,8 +24,10 @@ before_action :authenticate_user!, only: :new
   end
 
   def destroy
-    item = Item.find(params[:id])
-    item.destroy
+    @item = Item.find(params[:id])
+    if @item.user.id == @item.current_user.id
+      @item.destroy
+    end
     redirect_to root_path
   end
 
