@@ -11,7 +11,7 @@ class OrderAddress
     validates :region_id, numericality: {other_than: 1, message: "can't be blank"}
     validates :city
     validates :address
-    validates :phone_number, format: {with: /\d{10,11}/}, length: {maximum: 11}
+    validates :phone_number, format: {with: /\d{10,11}/}
   end
 
   def save

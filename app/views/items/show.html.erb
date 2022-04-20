@@ -32,8 +32,6 @@
       <% end %>
     <% elsif user_signed_in? && @item.order.blank? %>
       <%= link_to "購入画面に進む",item_orders_path(@item.id), class:"item-red-btn"%>
-    <% else %>
-      
     <% end %>
 
 
