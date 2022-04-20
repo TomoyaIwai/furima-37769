@@ -7,6 +7,7 @@ class Item < ApplicationRecord
   belongs_to :shipping_fee
   belongs_to :region
   belongs_to :schedule
+  has_one :order
 
   validates :image, presence: true
   validates :title, presence: true, length: { maximum: 40 }
