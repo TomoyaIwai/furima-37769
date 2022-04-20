@@ -31,7 +31,7 @@ before_action :set_item, only: [:destroy, :show, :edit, :update]
   end
 
   def edit
-    if @item.user.id != current_user.id
+    if @item.user.id != current_user.id || @item.order
       redirect_to root_path
     end
   end
